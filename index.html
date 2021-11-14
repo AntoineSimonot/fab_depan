@@ -8,10 +8,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/3fa7b58a9a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Fab’dépan</title>
     <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="responsive.css" />
+    <link rel="icon" href="img/repair-tools.png" />
 </head>
 <body>
+    <section class="burger">
+        <div>
+            <ul>
+                <li>Accueil</li>
+                <li>Mes Services</li>
+                <li>Contact</li>
+                <li>À propos</li>
+                <li>Tarifs & Prestations</li>
+                <i class="fas fa-times close"></i>
+            </ul>
+        </div>
+    </section>
     <header class="contactSection">
         <div class="fabDepanContact">
             <div class="phoneDepan">
@@ -37,6 +51,7 @@
             <li>À propos</li>
             <li>Tarifs & Prestations</li>
         </ul>
+        <i class="fas fa-bars open"></i>
         <a href="#" class="depanRDV">Prendre rendez-vous</a>
     </nav>
     <main>
@@ -53,39 +68,41 @@
     </main>
     <section class="services">
         <div>
-            <img src="img/photo.png" alt="">
-        </div>
-        <div>
             <div>
-                <h3>Mes <span>Services</span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur</p>
+                <img src="img/photo.png" alt="">
+            </div>
+            <div>
                 <div>
-                    <div class="service">
-                        <img src="img/tools.png" alt="logoDepan">
-                        <div>
-                            <p>Réparations</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+                    <h3>Mes <span>Services</span></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur</p>
+                    <div>
+                        <div class="service">
+                            <img src="img/tools.png" alt="logoDepan">
+                            <div>
+                                <p>Réparations</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="service">
-                        <img src="img/computer.png" alt="logoDepan">
-                        <div>
-                            <p>Désinfection</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="service">
+                            <img src="img/computer.png" alt="logoDepan">
+                            <div>
+                                <p>Désinfection</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="service">
-                        <img src="img/download.png" alt="logoDepan">
-                        <div>
-                            <p>Installation</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                    </div>           
-                    <div class="service">
-                        <img src="img/paint.png" alt="logoDepan">
-                        <div>
-                            <p>Nettoyage</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+                        <div class="service">
+                            <img src="img/download.png" alt="logoDepan">
+                            <div>
+                                <p>Installation</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>           
+                        <div class="service">
+                            <img src="img/paint.png" alt="logoDepan">
+                            <div>
+                                <p>Nettoyage</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,29 +138,33 @@
     </section>
     <section class="aPropos">
         <div>
-            <div></div>
-            <p>À  <span>propos</span></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div></div>
-            <p>Informations complémentaires : <br>
-                30€/30min 50€/h <br>
-                Paiement par carte bancaire <br>
-                Intervention à :</p>
-            <div class="location" id="perols">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>PÉROLS</p>
+            <div>
+                <div></div>
+                <p>À  <span>propos</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div></div>
+                <p>Informations complémentaires : <br>
+                    30€/30min 50€/h <br>
+                    Paiement par carte bancaire <br>
+                    Intervention à :</p>
             </div>
-            <div class="location" id="carnon">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>CARNON</p>
-            </div>
-            <div class="location" id="maurin">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>MAURIN</p>
-            </div>
-            <div class="location" id="lattes">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>LATTES/BOIRAGUES </p>
+            <div>
+                <div class="location" id="perols">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>PÉROLS</p>
+                </div>
+                <div class="location" id="carnon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>CARNON</p>
+                </div>
+                <div class="location" id="maurin">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>MAURIN</p>
+                </div>
+                <div class="location" id="lattes">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>LATTES/BOIRAGUES </p>
+                </div>
             </div>
         </div>
         <div>
@@ -151,6 +172,119 @@
                 <iframe id="iframe" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=p%C3%A9rols+(My%20Business%20Name)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="http://www.gps.ie/">gps devices</a>
                 </iframe>
             </div>      
+        </div>
+    </section>
+    <section class="price">
+        <p>TARIFS & PRESTATIONS</p>
+        <p>Ce que je propose</p>
+        <div></div>
+        <div>
+            <div>
+                <div>
+                    <p>Désinfection PC <span> - 70€</span></p>
+                    <p>Analyse et suppression de virus, de publicités 
+                        intempestives et de tous programmes malveillants. 
+                        Votre PC redevient rapide et sécurisé.</p>
+                </div>
+                <div>
+                    <p>Installation  <span> - 80€</span></p>
+                    <p>Réinstallation de Windows sur PC de marque
+                        (Windows 7, 8, 10)</p>
+                </div>
+                <div>
+                    <p>Dépannage/Installation d’un périphérique <span> - 30€</span></p>
+                    <p>(imprimante, scanner…)</p>
+                </div>
+                <div>
+                    <p>Installation matériel <span> - 35€</span></p>
+                    <p>(disque dur, carte
+                        graphique, composants…) </p>
+                </div>
+                <div>
+                    <p>Remplacement de la pâte thermique <span> - 20€</span></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Nettoyage Externe PC fixe ou
+                        portable <span> - 10€</span></p>
+                  
+                </div>
+                <div>
+                    <p>Nettoyage Interne PC fixe <span>- 25€</span></p>
+                </div>
+                <div>
+                    <p>Nettoyage Interne PC portable <span>- 75€</span></p>
+                    <p>Réduit la
+                        chauffe, diminue le bruit du ventilateur,
+                        prolonge la durée de vie des composants</p>
+                </div>
+                <div>
+                    <p>Nettoyage Externe PC fixe ou
+                        portable <span>- 10€</span></p>
+                    <p>(disque dur, carte
+                        graphique, composants…) - </p>
+                </div>
+                <div>
+                    <p>Sauvegarde des données (images, photos,
+                        documents…)  <span>- 20€</span></p>
+                </div>
+                <div>
+                    <p>Récupération de données <span>- À partir de 90€</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div>
+            <div>
+                <p>Fab’dépan</p>
+                <p>Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div>
+                <p>Menu</p>
+                <div>
+                    <ul>
+                        <li>Accueil</li>
+                        <li>Mes Services</li>
+                        <li>Contact</li>
+                    </ul>
+                    <ul>
+                        <li>À propos</li>
+                        <li>Tarifs & Prestations</li>
+                        <li>Prendre rendez-vous</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p>Me contacter</p>
+                <div>
+                    <div>                
+                        <i class="fas fa-phone-alt"></i>
+                        <p>07 69 96 76 81</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p>berthf@icloud.com</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-facebook-f"></i>
+                        <p>@Fab.Depan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="confidentiality">
+        <div>
+            <div>
+                <p>Politique de confidentialité</p>
+                <div></div>
+                <p>Mentions légales</p>
+            </div>
+            <p>2021 © Tous droits réservés. Designed by : Mayline</p>
         </div>
     </section>
 </body>

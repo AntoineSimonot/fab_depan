@@ -1,0 +1,263 @@
+@media screen and (max-width: 1080px)
+{
+    header .fabDepanContact{
+        width: 90%;
+    }
+    nav {
+        width: 90%;
+    }
+    nav li{
+        white-space: nowrap;
+        font-size: 14px;
+    }
+
+    nav a{
+        white-space: nowrap;
+        font-size: 14px;
+    }
+
+    .services > div > div:nth-of-type(1) {
+        display: none;
+    }
+
+    .services > div > div:nth-of-type(2) {
+        width: 100%;
+        justify-content: center;
+    } 
+
+    .devis > div:nth-of-type(2){
+       font-size: 14px;
+       min-width: 760px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    nav ul, nav a{
+       display: none;
+    }
+
+    nav i{
+        display: block !important;
+        font-size: 20px;
+        color: #2D58A8;
+    }
+
+    main > div {
+        padding: 0;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .services {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .devis > div:nth-of-type(2){
+        min-width: 80%;
+        margin: 0 auto;
+        
+    }
+
+    .devis > div:nth-of-type(2) > div > i{
+        font-size: 50px !important;
+    }
+
+    .devis > div:nth-of-type(2) div:nth-of-type(1) > i {
+        left: -25px;
+        bottom: -5px;
+    }
+
+    .devis > div:nth-of-type(2) div:nth-of-type(2) > i {
+        left: -10px;
+        bottom: -15px;
+    }
+
+    .devis > div:nth-of-type(2) div:nth-of-type(3) > i {
+        left: -25px;
+        bottom: -10px;
+    }
+
+    .aPropos{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .aPropos > div:nth-of-type(2){
+        width: 100%;
+        height: 400px;
+    }
+
+    .aPropos > div:nth-of-type(1){
+        display: flex;
+        width: 100%;
+    }
+
+    .aPropos > div:nth-of-type(1) > div{
+        width: 45%;
+        margin-bottom: 10px;
+    }
+
+    .price > div{
+        flex-direction: column;
+    }
+
+    .price > div:nth-of-type(2) > div {
+        margin: 15px;
+    }
+
+    .contact > div{
+        flex-direction: column;
+        margin: 10px auto;
+    }
+
+    .contact > div > div{
+        flex-direction: column;
+        margin: 10px auto;
+        width: 90%;
+        min-height: 130px;
+        justify-content: center;
+    }
+
+    .contact > div > div:nth-of-type(2) div {
+        margin-top: 10px;
+    }
+
+    .contact > div > div:nth-of-type(2) ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .burger{
+        background-color: #0C2F53;
+        position:fixed;
+        top:0px;
+        right:0px;
+        bottom:0px;
+        left:0px;
+        width: 100%;
+    }
+
+    .burger div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .burger div ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .burger div ul li{
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 25px;
+
+    }
+
+    .burger div ul i{
+        color: white;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    header .fabDepanContact{
+            flex-direction: column;
+            align-items: flex-start;
+    }
+
+    header > .fabDepanContact > div:nth-of-type(1) {
+        padding-left: 15px;
+    }
+
+    header > .fabDepanContact > div {
+        padding: 5px 15px;
+    }
+
+    main{
+        height: 90%;
+        padding: 50px 0;
+    }
+
+    main > div > .depanTitle h1{
+        font-size: 20px;
+    }
+
+    
+
+    main > div > .depanTitle h2 {
+        font-size: 22px;
+    }
+
+    .services{
+        height: auto;
+        padding-top: 25px;
+    }
+
+    .services > div{
+        height: auto;
+    }
+
+    .services> div > div:nth-of-type(2) > div > div > .service{
+        max-width: 100%;
+    }
+
+    .devis > div{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .devis > div:nth-of-type(2){
+       flex-direction: column;
+    }
+
+    .devis > div:nth-of-type(2) div{
+        margin: 25px 0;
+    }   
+
+    .aPropos > div:nth-of-type(1){
+        display: block;
+    }
+
+    .aPropos > div:nth-of-type(1) > div {
+        width: auto;
+    }
+
+    .price{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .price > div:nth-of-type(2) > div{
+        width: auto;
+    }
+
+    .price > div:nth-of-type(2) {
+
+        width: 100%;
+    }
+
+    .price > div:nth-of-type(2) > div > div{
+        width: auto;
+        padding: 0 15px;
+    }
+
+
+    .contact > div > div:nth-of-type(2) ul{
+        margin-right: 25px;
+    }
+
+
+}

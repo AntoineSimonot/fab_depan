@@ -11,4 +11,18 @@ document.addEventListener('DOMContentLoaded', function() {
             changeLocation(element.id)
         })
     })
-});
+
+    //display none class burger when class close clicked
+    document.querySelector('.close').addEventListener('click', function() {
+        document.querySelector('.burger').style.display = 'none'
+    })
+
+    document.querySelector('.close').addEventListener('click', function() {
+        document.querySelector('.burger').style.display = 'none'
+    })
+
+    //display block class burger when class open clicked
+    document.querySelector('.open').addEventListener('click', function() {
+        document.querySelector('.burger').style.display = 'block'
+    })
+})

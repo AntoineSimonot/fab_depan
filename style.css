@@ -53,6 +53,10 @@ nav ul{
     margin: 0;
 }
 
+nav i{
+    display: none !important;
+}
+
 nav li{
     padding: 20px 20px;
     font-family: 'Lato', sans-serif;
@@ -148,33 +152,43 @@ main > div > a{
     height: 650px;
 }
 
-.services > div:nth-of-type(1) {
+.services > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 640px;
+}
+
+
+.services > div > div:nth-of-type(1) {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 42%;
-    height: 95%;
+    height: 90%;
 }
 
-.services > div:nth-of-type(1) img{
+.services > div > div:nth-of-type(1) img{
    min-width: 300px;
-   max-width: 415px;
+   max-width: 450px;
+   height: 100%;
 }
 
-.services > div:nth-of-type(2) {
+.services > div > div:nth-of-type(2) {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 58%;
-    height: 80%;
+    height: 90%;
 }
 
-.services > div:nth-of-type(2) > div{
+.services > div > div:nth-of-type(2) > div{
     max-width: 900px;
     width: 95%;
 }
 
-.services > div:nth-of-type(2) h3{
+.services > div > div:nth-of-type(2) h3{
+    margin-top: 0;
     align-self: flex-start;
     border-left: solid #FA6E50 5px;
     padding-left: 25px;
@@ -186,32 +200,32 @@ main > div > a{
 
 }
 
-.services > div:nth-of-type(2) span{
+.services > div > div:nth-of-type(2) span{
     color: #2D58A8;
     font-weight: 900;
 }
 
-.services > div:nth-of-type(2) > div > p{
+.services > div > div:nth-of-type(2) > div > p{
     font-family: 'Lato', sans-serif;
     color: #0C2F53;
     font-size: 16px;
     padding-left: 25px;
 }
 
-.services > div:nth-of-type(2) > div > div {
+.services > div> div:nth-of-type(2) > div > div {
     display: flex;
     flex-wrap:wrap;
     margin-top: 30px;
 }
 
-.services > div:nth-of-type(2) > div > div > .service{
+.services> div  > div:nth-of-type(2) > div > div > .service{
     max-width: 40%;
     padding-left: 25px;
     padding-right: 30px;
     padding-bottom: 50px;
 }
 
-.services > div:nth-of-type(2) > div > div > .service > div > p:nth-of-type(1){
+.services> div  > div:nth-of-type(2) > div > div > .service > div > p:nth-of-type(1){
     color: #2D58A8;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
@@ -219,13 +233,13 @@ main > div > a{
     margin-bottom: 5px;
 }
 
-.services > div:nth-of-type(2) > div > div > .service > div > p:nth-of-type(2){
+.services > div > div:nth-of-type(2) > div > div > .service > div > p:nth-of-type(2){
     color: #0C2F53;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
 
-.services > div:nth-of-type(2) img{
+.services > div> div:nth-of-type(2) img{
     width: 50px;
     margin-bottom: 10px;
 }
@@ -331,11 +345,16 @@ main > div > a{
 
 }
 
-.aPropos > div:nth-of-type(1){
-   width: 50%;
+.aPropos > div > div:nth-of-type(1){
+   width: 80%;
    position: relative;
    margin: 0 auto;
 
+}
+
+.aPropos > div:nth-of-type(1){
+    width: 65%;
+    height: 100%;
 }
 
 .aPropos > div:nth-of-type(2){
@@ -353,7 +372,7 @@ main > div > a{
     height: 100%;
 }
 
-.aPropos > div:nth-of-type(1) > div:nth-of-type(1){
+.aPropos  > div > div:nth-of-type(1) > div:nth-of-type(1){
     width:5px;
     height: 30px;
     background-color: #FA6E50;
@@ -362,19 +381,19 @@ main > div > a{
     top: 0px;
 }
 
-.aPropos > div:nth-of-type(1){
+.aPropos  > div > div:nth-of-type(1){
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     margin-left: 0;
     color: #0C2F53;
 }
 
-.aPropos > div:nth-of-type(p){
+.aPropos > div:nth-of-type(1){
     color: #2D58A8;
 }
 
 
-.aPropos > div:nth-of-type(1) div:nth-of-type(2){
+.aPropos  > div > div:nth-of-type(1) div:nth-of-type(2){
    width: 100%;
    height: 3px;
    background-color: #E0E0E0;
@@ -382,7 +401,7 @@ main > div > a{
 }
 
 
-.aPropos > div:nth-of-type(1) > p:nth-of-type(1){
+.aPropos  > div > div:nth-of-type(1) > p:nth-of-type(1){
     color: #0C2F53;
     font-family: 'Lato', sans-serif;
     font-size: 30px;
@@ -390,17 +409,17 @@ main > div > a{
     margin-bottom: 20px;
 }
 
-.aPropos > div:nth-of-type(1) span{
+.aPropos  > div > div:nth-of-type(1) span{
     color: #2D58A8;
     font-weight: 900;
 }
 
-.aPropos > div:nth-of-type(1) > p:last-of-type{
+.aPropos > div> div:nth-of-type(1) > p:last-of-type{
     margin: 20px 0;
 
 }
 
-.aPropos .location{
+.aPropos > div .location{
     display: flex;
     align-items: center;
     padding: 10px 0;
@@ -410,6 +429,197 @@ main > div > a{
 }
 
 
-.aPropos .location i{
+.aPropos > div .location i{
     margin-right: 10px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    background-image: url('./img/tarifImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.price > p:nth-of-type(1){
+    font-size: 26px;
+    margin-top: 0;
+    color: white;
+}
+
+.price > p:nth-of-type(2){
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.price > div:nth-of-type(1){
+    width: 125px;
+    height: 5px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+
+.price > div:nth-of-type(2) > div{
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 10px 0;
+        margin: 0 20px;
+
+}
+
+.price > div:nth-of-type(2){
+   display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.price > div:nth-of-type(2) > div > div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 12.5px 0px;
+}
+
+.price > div:nth-of-type(2) > div > div > p:nth-of-type(1){
+    font-family: 'Lato', sans-serif;
+    color: #2D58A8;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price > div:nth-of-type(2) > div > div > p span{
+    color: #afa4a4;
+    font-size: 16px;
+}
+
+.price > div:nth-of-type(2) > div > div > p:nth-of-type(2){
+    font-family: 'Lato', sans-serif;
+    color: #0C2F53;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact{
+    background-color: #0C2F53;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+.contact > div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.contact > div > div{
+    display: flex;
+    flex-direction: column;
+    min-height: 145px;
+    width:320px;
+}
+
+.contact > div > div > p:nth-of-type(1){
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.contact > div > div:nth-of-type(1) > p:nth-of-type(1){
+    margin-bottom: 16px;
+}
+
+.contact > div > div:nth-of-type(2) div{
+    display: flex;
+}
+
+.contact > div > div:nth-of-type(2) ul{
+    padding: 0;
+    padding-right: 30px;
+    list-style: none;
+}
+
+.contact > div > div:nth-of-type(2) li{
+    padding: 0;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.contact > div > div:nth-of-type(3) div div{
+    display: flex;
+    margin: 10px 0;
+}
+
+.contact > div > div:nth-of-type(3) div div p{
+    padding-left: 20px;
+}
+
+.contact > div > div:nth-of-type(3) > p:nth-of-type(1){
+    margin-bottom: 6px;
+}
+
+.confidentiality{
+    border-top: solid 1px #6A87A5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0C2F53;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding: 30px 0;
+    font-weight: bold;
+}
+
+.confidentiality > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.confidentiality > div{
+   width: 90%;
+   text-align: center;
+}
+
+.confidentiality > div > div > div{
+    width: 3px;
+    height: 20px;
+    background-color: #1F4B77;
+    margin: 0 20px;
+    font-size: 16px;
+
+}
+
+.confidentiality > div > p{
+    font-size: 14px;
+    color: #6A87A5;
+    margin-top: 10px;
+}
+
+.burger{
+    display: none;
 }
