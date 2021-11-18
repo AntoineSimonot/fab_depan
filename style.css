@@ -61,6 +61,12 @@ nav li{
     padding: 20px 20px;
     font-family: 'Lato', sans-serif;
     font-size: 17px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+nav a{
+    text-decoration: none;
     color: #2D58A8;
 }
 
@@ -68,7 +74,6 @@ nav li{
 nav li:hover{
     background-color: #2D58A8;
     color: white;
-    font-weight: bold;
 }
 
 nav img{
@@ -88,6 +93,8 @@ nav img{
     text-decoration: none;
     width: 160px;
     text-align: center;
+    white-space: nowrap;
+
 }
 
 main{
@@ -145,53 +152,55 @@ main > div > a{
 
 }
 
-.services{
+#services{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 650px;
 }
 
-.services > div{
+#services > div{
     display: flex;
     align-items: center;
     justify-content: center;
-   height: 640px;
+    height: 640px;
+    width: 80%;
 }
 
 
-.services > div > div:nth-of-type(1) {
+#services > div > div:nth-of-type(1) {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 42%;
+    width: 35%;
     height: 90%;
 }
 
-.services > div > div:nth-of-type(1) img{
+#services > div > div:nth-of-type(1) img{
    min-width: 300px;
    max-width: 450px;
    height: 100%;
 }
 
-.services > div > div:nth-of-type(2) {
+#services > div > div:nth-of-type(2) {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 58%;
+    align-items: flex-end;
+    width: 65%;
     height: 90%;
 }
 
-.services > div > div:nth-of-type(2) > div{
-    max-width: 900px;
-    width: 95%;
+
+
+#services > div > div:nth-of-type(2) > div{
+    width: 85%;
+    position: relative;
 }
 
-.services > div > div:nth-of-type(2) h3{
+#services > div > div:nth-of-type(2) h3{
     margin-top: 0;
     align-self: flex-start;
-    border-left: solid #FA6E50 5px;
-    padding-left: 25px;
     color: #0C2F53;
     font-family: 'Lato', sans-serif;
     font-size: 30px;
@@ -200,32 +209,40 @@ main > div > a{
 
 }
 
-.services > div > div:nth-of-type(2) span{
+#services > div > div:nth-of-type(2) span{
     color: #2D58A8;
     font-weight: 900;
 }
 
-.services > div > div:nth-of-type(2) > div > p{
+#services > div > div:nth-of-type(2) > div > p{
     font-family: 'Lato', sans-serif;
     color: #0C2F53;
     font-size: 16px;
-    padding-left: 25px;
 }
 
-.services > div> div:nth-of-type(2) > div > div {
+#services > div> div:nth-of-type(2) > div > div {
     display: flex;
     flex-wrap:wrap;
     margin-top: 30px;
 }
 
-.services> div  > div:nth-of-type(2) > div > div > .service{
+#services > div> div:nth-of-type(2) > div .orangeBorder{
+    width: 5px;
+    height: 30px;
+    background-color: #FA6E50;
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    margin: 0;
+}
+
+#services> div  > div:nth-of-type(2) > div > div > .service{
     max-width: 40%;
-    padding-left: 25px;
     padding-right: 30px;
     padding-bottom: 50px;
 }
 
-.services> div  > div:nth-of-type(2) > div > div > .service > div > p:nth-of-type(1){
+#services> div  > div:nth-of-type(2) > div > div > .service > div > p:nth-of-type(1){
     color: #2D58A8;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
@@ -233,18 +250,18 @@ main > div > a{
     margin-bottom: 5px;
 }
 
-.services > div > div:nth-of-type(2) > div > div > .service > div > p:nth-of-type(2){
+#services > div > div:nth-of-type(2) > div > div > .service > div > p:nth-of-type(2){
     color: #0C2F53;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
 
-.services > div> div:nth-of-type(2) img{
+#services > div> div:nth-of-type(2) img{
     width: 50px;
     margin-bottom: 10px;
 }
 
-.devis{
+#devis{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,7 +272,7 @@ main > div > a{
     padding-bottom: 60px;
 }
 
-.devis > div:nth-of-type(1){
+#devis > div:nth-of-type(1){
     display: flex;
     align-items: center;
     justify-content: center;
@@ -263,30 +280,30 @@ main > div > a{
     font-family: 'Lato', sans-serif;
 }
 
-.devis > div:nth-of-type(1) h4{
+#devis > div:nth-of-type(1) h4{
     font-size: 22px;
     margin-top: 0;
     margin-bottom: 12.5px;
 }
 
-.devis > div:nth-of-type(1) p{
+#devis > div:nth-of-type(1) p{
     font-size: 24px;
     font-weight: 900;
 }
 
-.devis > div:nth-of-type(1) > div{
+#devis > div:nth-of-type(1) > div{
     display: flex;
     align-items: center;
 }
 
-.devis > div:nth-of-type(1) > div > div{
+#devis > div:nth-of-type(1) > div > div{
     width: 125px;
     height: 5px;
     background-color: #FA6E50;
     margin-right: 20px;
 }
 
-.devis > div:nth-of-type(2){
+#devis > div:nth-of-type(2){
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -296,45 +313,45 @@ main > div > a{
  }
 
  
-.devis > div:nth-of-type(2) div{
+#devis > div:nth-of-type(2) div{
    display: flex;
    flex-direction: column;
    font-family: 'Lato', sans-serif;
    position: relative;
 }
 
-.devis > div:nth-of-type(2) div > p:nth-of-type(1){
+#devis > div:nth-of-type(2) div > p:nth-of-type(1){
    font-weight: 900;
    font-size: 18px;
 }
 
-.devis > div:nth-of-type(2) div > p:nth-of-type(2){
+#devis > div:nth-of-type(2) div > p:nth-of-type(2){
     font-size: 16px;
 }
 
-.devis > div:nth-of-type(2) div > i{
+#devis > div:nth-of-type(2) div > i{
     opacity: 0.3;
     font-size: 80px;
     position: absolute;
 }
 
-.devis > div:nth-of-type(2) div:nth-of-type(1) > i{
+#devis > div:nth-of-type(2) div:nth-of-type(1) > i{
     left: -50px;
     bottom: -20px;
 }
 
-.devis > div:nth-of-type(2) div:nth-of-type(2) > i{
+#devis > div:nth-of-type(2) div:nth-of-type(2) > i{
     left: -60px;
     bottom: -30px;
     font-size: 90px;
 }
  
-.devis > div:nth-of-type(2) div:nth-of-type(3) > i{
+#devis > div:nth-of-type(2) div:nth-of-type(3) > i{
     left: -25px;
     bottom: -20px;
 }
 
-.aPropos{
+#aPropos{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -345,55 +362,56 @@ main > div > a{
 
 }
 
-.aPropos > div > div:nth-of-type(1){
+#aPropos > div > div:nth-of-type(1){
    width: 80%;
    position: relative;
    margin: 0 auto;
 
 }
 
-.aPropos > div:nth-of-type(1){
+#aPropos > div:nth-of-type(1){
     width: 65%;
     height: 100%;
 }
 
-.aPropos > div:nth-of-type(2){
+#aPropos > div:nth-of-type(2){
     width: 35%;
     height: 100%;
 }
 
-.aPropos > div:nth-of-type(2) > div{
+#aPropos > div:nth-of-type(2) > div{
     width: 100%;
     height: 100%;
 }
 
-.aPropos > div:nth-of-type(2) > div > div{
+#aPropos > div:nth-of-type(2) > div > div{
     width: 100%;
     height: 100%;
 }
 
-.aPropos  > div > div:nth-of-type(1) > div:nth-of-type(1){
-    width:5px;
+#aPropos  > div > div:nth-of-type(1) > .orangeBorder{
+    width: 5px;
     height: 30px;
     background-color: #FA6E50;
     position: absolute;
     left: -25px;
-    top: 0px;
+    top: 2.5px;
+    margin: 0;
 }
 
-.aPropos  > div > div:nth-of-type(1){
+#aPropos  > div > div:nth-of-type(1){
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     margin-left: 0;
     color: #0C2F53;
 }
 
-.aPropos > div:nth-of-type(1){
+#aPropos > div:nth-of-type(1){
     color: #2D58A8;
 }
 
 
-.aPropos  > div > div:nth-of-type(1) div:nth-of-type(2){
+#aPropos  > div > div:nth-of-type(1) div:nth-of-type(2){
    width: 100%;
    height: 3px;
    background-color: #E0E0E0;
@@ -401,7 +419,7 @@ main > div > a{
 }
 
 
-.aPropos  > div > div:nth-of-type(1) > p:nth-of-type(1){
+#aPropos  > div > div:nth-of-type(1) > p:nth-of-type(1){
     color: #0C2F53;
     font-family: 'Lato', sans-serif;
     font-size: 30px;
@@ -409,17 +427,17 @@ main > div > a{
     margin-bottom: 20px;
 }
 
-.aPropos  > div > div:nth-of-type(1) span{
+#aPropos  > div > div:nth-of-type(1) span{
     color: #2D58A8;
     font-weight: 900;
 }
 
-.aPropos > div> div:nth-of-type(1) > p:last-of-type{
+#aPropos > div> div:nth-of-type(1) > p:last-of-type{
     margin: 20px 0;
 
 }
 
-.aPropos > div .location{
+#aPropos > div .location{
     display: flex;
     align-items: center;
     padding: 10px 0;
@@ -429,11 +447,11 @@ main > div > a{
 }
 
 
-.aPropos > div .location i{
+#aPropos > div .location i{
     margin-right: 10px;
 }
 
-.price{
+#price{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -447,20 +465,20 @@ main > div > a{
     background-size: cover;
 }
 
-.price > p:nth-of-type(1){
+#price > p:nth-of-type(1){
     font-size: 26px;
     margin-top: 0;
     color: white;
 }
 
-.price > p:nth-of-type(2){
+#price > p:nth-of-type(2){
     font-size: 30px;
     font-weight: 900;
     color: white;
     margin-bottom: 20px;
 }
 
-.price > div:nth-of-type(1){
+#price > div:nth-of-type(1){
     width: 125px;
     height: 5px;
     background-color: white;
@@ -468,7 +486,7 @@ main > div > a{
 }
 
 
-.price > div:nth-of-type(2) > div{
+#price > div:nth-of-type(2) > div{
     width: 600px;
     height: 500px;
     background-color: white;
@@ -482,14 +500,14 @@ main > div > a{
 
 }
 
-.price > div:nth-of-type(2){
+#price > div:nth-of-type(2){
    display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 90%;
 }
 
-.price > div:nth-of-type(2) > div > div{
+#price > div:nth-of-type(2) > div > div{
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -497,33 +515,33 @@ main > div > a{
     padding: 12.5px 0px;
 }
 
-.price > div:nth-of-type(2) > div > div > p:nth-of-type(1){
+#price > div:nth-of-type(2) > div > div > p:nth-of-type(1){
     font-family: 'Lato', sans-serif;
     color: #2D58A8;
     font-size: 20px;
     font-weight: bold;
 }
 
-.price > div:nth-of-type(2) > div > div > p span{
+#price > div:nth-of-type(2) > div > div > p span{
     color: #afa4a4;
     font-size: 16px;
 }
 
-.price > div:nth-of-type(2) > div > div > p:nth-of-type(2){
+#price > div:nth-of-type(2) > div > div > p:nth-of-type(2){
     font-family: 'Lato', sans-serif;
     color: #0C2F53;
     font-size: 18px;
     font-weight: 500;
 }
 
-.contact{
+#contact{
     background-color: #0C2F53;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 35px;
 }
 
-.contact > div{
+#contact > div{
     width: 80%;
     display: flex;
     align-items: center;
@@ -534,49 +552,54 @@ main > div > a{
 
 }
 
-.contact > div > div{
+#contact > div > div{
     display: flex;
     flex-direction: column;
     min-height: 145px;
     width:320px;
 }
 
-.contact > div > div > p:nth-of-type(1){
+#contact > div > div > p:nth-of-type(1){
     font-size: 24px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 }
 
-.contact > div > div:nth-of-type(1) > p:nth-of-type(1){
+#contact > div > div:nth-of-type(1) > p:nth-of-type(1){
     margin-bottom: 16px;
 }
 
-.contact > div > div:nth-of-type(2) div{
+#contact > div > div:nth-of-type(2) div{
     display: flex;
 }
 
-.contact > div > div:nth-of-type(2) ul{
+#contact > div > div:nth-of-type(2) ul{
     padding: 0;
     padding-right: 30px;
     list-style: none;
 }
 
-.contact > div > div:nth-of-type(2) li{
+#contact > div > div:nth-of-type(2) li{
     padding: 0;
     list-style: none;
     margin-bottom: 10px;
+    color: white;
 }
 
-.contact > div > div:nth-of-type(3) div div{
+#contact > div > div:nth-of-type(2) a{
+    text-decoration: none;
+}
+
+#contact > div > div:nth-of-type(3) div div{
     display: flex;
     margin: 10px 0;
 }
 
-.contact > div > div:nth-of-type(3) div div p{
+#contact > div > div:nth-of-type(3) div div p{
     padding-left: 20px;
 }
 
-.contact > div > div:nth-of-type(3) > p:nth-of-type(1){
+#contact > div > div:nth-of-type(3) > p:nth-of-type(1){
     margin-bottom: 6px;
 }
 
@@ -622,4 +645,5 @@ main > div > a{
 
 .burger{
     display: none;
+    z-index: 100;
 }

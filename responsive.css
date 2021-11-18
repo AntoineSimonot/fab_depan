@@ -16,22 +16,33 @@
         font-size: 14px;
     }
 
-    .services > div > div:nth-of-type(1) {
+    #services{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #services > div{
+        width: 100%;
+        align-items:;
+    }
+    #services > div > div:nth-of-type(1) {
         display: none;
     }
 
-    .services > div > div:nth-of-type(2) {
+    #services > div > div:nth-of-type(2) {
         width: 100%;
-        justify-content: center;
     } 
 
-    .devis > div:nth-of-type(2){
+    #services > div > div:nth-of-type(2) > div{
+        width: 100%;
+    }
+    #devis > div:nth-of-type(2){
        font-size: 14px;
        min-width: 760px;
     }
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 920px)
 {
     nav ul, nav a{
        display: none;
@@ -43,103 +54,18 @@
         color: #2D58A8;
     }
 
-    main > div {
-        padding: 0;
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .services {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .devis > div:nth-of-type(2){
-        min-width: 80%;
-        margin: 0 auto;
-        
-    }
-
-    .devis > div:nth-of-type(2) > div > i{
-        font-size: 50px !important;
-    }
-
-    .devis > div:nth-of-type(2) div:nth-of-type(1) > i {
-        left: -25px;
-        bottom: -5px;
-    }
-
-    .devis > div:nth-of-type(2) div:nth-of-type(2) > i {
-        left: -10px;
-        bottom: -15px;
-    }
-
-    .devis > div:nth-of-type(2) div:nth-of-type(3) > i {
-        left: -25px;
-        bottom: -10px;
-    }
-
-    .aPropos{
-        flex-direction: column;
-        height: auto;
-    }
-
-    .aPropos > div:nth-of-type(2){
-        width: 100%;
-        height: 400px;
-    }
-
-    .aPropos > div:nth-of-type(1){
-        display: flex;
-        width: 100%;
-    }
-
-    .aPropos > div:nth-of-type(1) > div{
-        width: 45%;
-        margin-bottom: 10px;
-    }
-
-    .price > div{
-        flex-direction: column;
-    }
-
-    .price > div:nth-of-type(2) > div {
-        margin: 15px;
-    }
-
-    .contact > div{
-        flex-direction: column;
-        margin: 10px auto;
-    }
-
-    .contact > div > div{
-        flex-direction: column;
-        margin: 10px auto;
-        width: 90%;
-        min-height: 130px;
-        justify-content: center;
-    }
-
-    .contact > div > div:nth-of-type(2) div {
-        margin-top: 10px;
-    }
-
-    .contact > div > div:nth-of-type(2) ul {
-        padding: 0;
-        margin: 0;
-    }
-
+    
     .burger{
         background-color: #0C2F53;
         position:fixed;
         top:0px;
         right:0px;
         bottom:0px;
-        left:0px;
-        width: 100%;
+        min-width: 300px;
+    
     }
 
-    .burger div{
+    .burger > div{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -147,29 +73,118 @@
         height: 100%;
     }
 
-    .burger div ul{
+    .burger > div ul{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 90%;
+        height: 82%;
         list-style: none;
         padding: 0;
         margin: 0;
     }
 
-    .burger div ul li{
+    .burger > div ul li{
         color: white;
         font-family: 'Lato', sans-serif;
-        font-size: 25px;
+        font-size: 22px;
+        text-align: right;
 
     }
 
-    .burger div ul i{
+    .burger > div ul div{
+        display: flex;
+        flex-direction: column;
+        min-height: 50%;
+        justify-content: space-around;
+    }
+
+    .burger > div ul i{
         color: white;
         font-size: 25px;
+        text-align: right;
+        margin-bottom: 15px;
     }
+    
+    main > div {
+        padding: 0;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #devis > div:nth-of-type(2){
+        min-width: 80%;
+        margin: 0 auto;
+        
+    }
+
+    #devis > div:nth-of-type(2) > div > i{
+        font-size: 50px !important;
+    }
+
+    #devis > div:nth-of-type(2) div:nth-of-type(1) > i {
+        left: -25px;
+        bottom: -5px;
+    }
+
+    #devis > div:nth-of-type(2) div:nth-of-type(2) > i {
+        left: -10px;
+        bottom: -15px;
+    }
+
+    #devis > div:nth-of-type(2) div:nth-of-type(3) > i {
+        left: -25px;
+        bottom: -10px;
+    }
+
+    #aPropos{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #aPropos > div:nth-of-type(2){
+        width: 100%;
+        height: 400px;
+    }
+
+    #aPropos > div:nth-of-type(1){
+        display: flex;
+        width: 100%;
+    }
+
+    #aPropos > div:nth-of-type(1) > div{
+        width: 45%;
+        margin-bottom: 10px;
+    }
+
+    #price > div{
+        flex-direction: column;
+    }
+
+    #price > div:nth-of-type(2) > div {
+        margin: 15px;
+    }
+
+    #contact > div{
+        flex-direction: column;
+        margin: 10px auto;
+    }
+
+    #contact > div > div{
+        flex-direction: column;
+        margin: 10px auto;
+        width: 90%;
+        min-height: 130px;
+        justify-content: center;
+    }
+
+    #contact > div > div:nth-of-type(2) div {
+        margin-top: 10px;
+    }
+
+    #contact > div > div:nth-of-type(2) ul {
+        padding: 0;
+        margin: 0;
+    }
+
 }
 
 @media screen and (max-width: 600px)
@@ -202,60 +217,66 @@
         font-size: 22px;
     }
 
-    .services{
+    #services{
         height: auto;
         padding-top: 25px;
     }
 
-    .services > div{
+    #services > div{
         height: auto;
     }
 
-    .services> div > div:nth-of-type(2) > div > div > .service{
+    #services> div > div:nth-of-type(2) > div > div > .service{
         max-width: 100%;
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
     }
 
-    .devis > div{
+    #devis > div{
         width: 80%;
         margin: 0 auto;
     }
-    .devis > div:nth-of-type(2){
+    #devis > div:nth-of-type(2){
        flex-direction: column;
     }
 
-    .devis > div:nth-of-type(2) div{
+    #devis > div:nth-of-type(2) div{
         margin: 25px 0;
     }   
 
-    .aPropos > div:nth-of-type(1){
+    #aPropos > div:nth-of-type(1){
         display: block;
     }
 
-    .aPropos > div:nth-of-type(1) > div {
+    #aPropos > div:nth-of-type(1) > div {
         width: auto;
     }
 
-    .price{
+    #price{
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .price > div:nth-of-type(2) > div{
+    #price > div:nth-of-type(2) > div{
         width: auto;
     }
 
-    .price > div:nth-of-type(2) {
+    #price > div:nth-of-type(2) {
 
         width: 100%;
     }
 
-    .price > div:nth-of-type(2) > div > div{
-        width: auto;
+    #price > div:nth-of-type(2) > div > div{
+        width: auto%;
         padding: 0 15px;
     }
 
 
-    .contact > div > div:nth-of-type(2) ul{
+    #contact > div > div:nth-of-type(2) ul{
         margin-right: 25px;
     }
 
