@@ -557,7 +557,7 @@ main > div > a{
     display: flex;
     flex-direction: column;
     min-height: 145px;
-    width:320px;
+    width:330px;
 }
 
 #contact > div > div > p:nth-of-type(1){

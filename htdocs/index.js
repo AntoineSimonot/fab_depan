@@ -26,3 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.burger').style.display = 'block'
     })
 })
+
