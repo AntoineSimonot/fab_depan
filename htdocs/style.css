@@ -648,3 +648,7 @@ main > div > a{
     display: none;
     z-index: 100;
 }
+
+.italic {
+    font-style: italic;
+}
