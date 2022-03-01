@@ -493,13 +493,22 @@ main > div > a{
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-direction: column;
     border-radius: 15px;
     padding: 10px 0;
-        margin: 0 20px;
+    margin: 0 20px;
+}
+
+#price > div:nth-of-type(2) > div > p:nth-of-type(1){
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #0C2F53;
+    margin-top: 25px;
 
 }
+
 
 #price > div:nth-of-type(2){
    display: flex;
